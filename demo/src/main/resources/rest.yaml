@@ -18,4 +18,4 @@ spec:
   lifecycle: production
   owner: team-user-platform
   system: identity-management
-  
+  definition: test
