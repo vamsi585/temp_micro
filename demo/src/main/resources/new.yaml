@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: greeter-service
+  description: A gRPC service for greeting users by name
+  tags:
+    - grpc
+    - service
+  annotations:
+    # URL or path to your service's gRPC .proto file for documentation
+    grpc.io/proto-ref: "url:https://example.com/path/to/greeter.proto"
+    # Link to the generated TechDocs if you want to add API documentation
+    backstage.io/techdocs-ref: "url:https://example.com/techdocs/greeter-service"
+spec:
+  type: service
+  lifecycle: production
+  owner: team-example
+  system: greeter-system
