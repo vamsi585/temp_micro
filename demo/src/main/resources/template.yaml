@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: user-service
+  description: A Spring Boot REST API for managing user accounts
+  tags:
+    - java
+    - springboot
+    - rest
+    - api
+  annotations:
+    # Link to the GitHub repo
+    backstage.io/source-location: url:https://github.com/your-org/user-service
+    # Link to the TechDocs site (if using TechDocs)
+    backstage.io/techdocs-ref: dir:.
+    # OpenAPI specification reference
+    backstage.io/api-spec-ref: url:https://raw.githubusercontent.com/your-org/user-service/main/openapi.yaml
+spec:
+  type: service
+  lifecycle: production
+  owner: team-user-platform
+  system: identity-management
+  providesApis:
+    - user-api
