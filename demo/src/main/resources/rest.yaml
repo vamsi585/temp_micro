@@ -1,0 +1,21 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: user-service-api
+  description: A Spring Boot REST API for managing user accounts
+  tags:
+    - java
+    - springboot
+    - rest
+    - api
+  annotations:
+    # Link to the GitHub repo
+    source-location: url:https://github.com/vamsi585/temp_micro/tree/branch2/demo
+  
+spec:
+  type: service
+  lifecycle: production
+  owner: team-user-platform
+  system: identity-management
+  
