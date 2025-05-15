@@ -22,10 +22,10 @@ spec:
     title: User Management API
     description: API for managing users in the system
     version: 1.0.0
-    servers:
-     - url: http://localhost:8080/api
+   servers:
+    - url: http://localhost:8080/api
       description: Local development server
-    paths:
+   paths:
       /hello:
          get:
            summary: Get all users
